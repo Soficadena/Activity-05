@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <title>Hello, world!</title>
+ </head>
+ <body>
+ <h1>Hello, world!</h1>
+ <!-- Optional JavaScript -->
+
+ <h1>Tag Form</h1>
+</form>
+<form action="../../form-result.php" method="get" target="_blank">
+<fieldset>
+ <legend>Información básica</legend>
+ <p><label>Nombre completo: <input type="text" name="nombrecompleto"></label></p>
+ <p><label>Fecha de nacimiento: <input type="date" name="fechadenacimiento"></label></p>
+ <p>Gender:
+ <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+ <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+ </p>
+ <p><label>Dirección: <input type="text" name="direccion"></label></p>
+ <p><label>Número telefónico: <input type="tel" name="telefono"></label></p>
+</fieldset>
+<fieldset>
+ <legend>Información extra</legend>
+ <p>Interests:
+ <label><input type="checkbox" name="libros"> Libros</label>
+ <label><input type="checkbox" name="peliculas"> Películas</label>
+ <label><input type="checkbox" name="videojuegos"> Videojuegos</label>
+ </p>
+ <p><label>Color favorito: <input type="color" name="colorfavorito"></label></p>
+</fieldset>
+<p>
+ <input type="submit" value="Enviar datos">
+ <input type="reset" value="Restaurar formulario">
+</p>
+
+<h1>Tag Label</h1>
+<form action="../../form-result.php" method="post" target="_blank">
+    <p><label>Nombre de usuario: <input type="text" name="usuario"></label></p>
+    <p><label>Contraseña: <input type="password" name="pass"></label></p>
+    <p><input type="submit" value="Enviar datos"></p>
+    </form>
+
+    <h1>Tag Input</h1>
+    <form action="../../form-result.php" method="post" target="_blank">
+        <p>Nombre: <input type="text" name="nombre" value="John"></p>
+        <p>Apellido: <input type="text" name="apellido"></p>
+        <p>Deporte favorito: <input type="text" name="deporte" placeholder="Fútbol? Tenis?
+        Hockey?"></p>
+        <p>
+         <input type="submit" value="Enviar datos">
+         <input type="reset" value="Restaurar formulario">
+        </p>
+        </form>
+
+        <h1>Tag Button</h1>
+        <form action="../../form-result.php">
+            <p>
+             Usuario: <input type="text" name="usuario">
+             <button type="button">Estoy en huelga...</button>
+            </p>
+            </form>
+
+            <h1>Tag Select</h1>
+            <form action="../../form-result.php" target="_blank">
+                <p>
+                 Deporte favorito:
+                 <select name="deporte">
+                 <option>Fútbol</option>
+                 <option>Críquet</option>
+                 <option>Básquetbol</option>
+                 <option>Hockey</option>
+                 <option>Tenis</option>
+                 </select>
+                 <input type="submit" value="Enviar">
+                </p>
+                </form>
+
+                <h1>Tag Detalist</h1>
+                <p><label>Ingresa un nombre para tu mascota: <input type="text" name="nombremascota"
+                    list="listamascotas"></label></p>
+                    <datalist id="listamascotas">
+                    <label>O elige uno de la siguiente lista</label>
+                     <select name="nombremascota">
+                     <option>Bela</option>
+                     <option>Luna</option>
+                     <option>Daisy</option>
+                     <option>Brisa</option>
+                     </select>
+                    </label>
+                    </datalist>
+                
+                    <h1>Tag Option</h1>
+                    <form action="../../form-result.php" target="_blank">
+                        <p>
+                         Tu bebida:
+                         <select name="bebida" required>
+                         <option value="">Elije tu bebida</option>
+                         <optgroup label="Con Vodka">
+                         <option>Martini</option>
+                         <option>Cosmopolita</option>
+                         <option>Destornillador</option>
+                         </optgroup>
+                         <optgroup label="Con Tequila">
+                         <option>Margarita</option>
+                         <option>Tequila Sunrise</option>
+                         <option>Cantarito</option>
+                         </optgroup>
+                         </select>
+                         <input type="submit" value="Enviar">
+                        </p>
+                        </form>
+
+                        <h1>Tag Textarea</h1>
+                        <form action="../../form-result.php" target="_blank">
+                            <p>Agregar una nueva descripción:</p>
+                            <p><textarea name="descripcion" cols="40" rows="5"></textarea></p>
+                            <p><input type="submit" value="Enviar"></p>
+                            </form>
+
+                            <h1>Tag progress</h1>
+                            <p>Progreso: <progress max="100" value="20"></progress></p>
+<p>Progreso de la subida: <progress max="68" value="47">47/68</progress></p>
+<p>Progreso de la recuperación del archivo: <progress></progress></p>
+<p>
+<input type="button" value="Transferir archivo" onclick="progresoTransferenciaArchivo()">
+Progreso: <progress id="transferenciaarchivo" value="0"></progress>
+</p>
+            
+<h1>Tag Details</h1>
+<form action="../../form-result.php" target="_blank">
+    <p>Direción de e-mail: <input type="email" name="direccionemail"></p>
+    <details>
+     <summary>Opciones extra</summary>
+     <p><input type="checkbox" name="enviarofertas" checked> Enviar ofertas y promociones a
+    mi dirección de e-mail.</p>
+    </details>
+    <p><input type="submit" value="Enviar datos"></p>
+    </form>
+
+    <h1>Tag Script</h1>
+    <p onmouseover="cambiarAItalica(this)" onmouseout="changeANormal(this)">Kennedy se
+        tranquilizó y volvió a abismarse en su contemplación indecisa, cuando hendió los aires un agudo
+        silbido.</p>
+        <script>
+        function cambiarAItalica(element) {
+         element.style.fontStyle='italic';
+        }
+        function changeANormal(element) {
+         element.style.fontStyle='normal';
+        }
+        </script>
+ </body>
+</html>
